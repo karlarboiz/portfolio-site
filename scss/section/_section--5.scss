@@ -1,0 +1,50 @@
+@use "../abstract/" as *;
+
+.section--5 {
+    height: $section-height;
+    position: relative;
+    h1 {
+        font-size: $main-font--size;
+        font-weight: $main-header--font-weight;
+    }
+    &__first--container {
+        position: absolute;
+        top: calc($section-height - 32.5rem);
+        left: calc(22.5vw - 5%);
+
+        width: 25rem;
+        max-width: 25rem;
+        min-height: 30rem;
+        border-radius: 1.25rem;
+        text-align: center;
+        background: $main--color;
+        border-radius: 16px;
+        box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(233, 228, 131, 0.28);
+        
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+         img{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            margin: 0 auto;
+            object-fit: cover;
+         }
+    }
+
+    &__second--container {
+        position: absolute;
+        top: 0;
+        left: 75%;
+        width: 45%;
+        transform: translate(-50%,50%);
+
+
+    }
+}
+

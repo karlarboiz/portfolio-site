@@ -1,0 +1,26 @@
+@use "./abstract/" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font--style;
+}
+
+.common-text {
+    font-size: $common-font--size;
+    padding: 0;
+    margin: 0;
+}
+
+.common-header {
+    font-weight: $main-header--font-weight;
+}
+
+.common-highlight {
+    font-size: $common-font--size;
+    font-weight: 500;
+}

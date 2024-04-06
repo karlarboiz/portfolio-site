@@ -1,0 +1,13 @@
+@use "../abstract/" as *;
+
+
+.navbar-brand {
+    font-weight: $main-header--font-weight;
+    font-size:$common-header-size; 
+
+}
+
+.nav-item a{
+
+    font-weight: 600;
+}

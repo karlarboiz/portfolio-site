@@ -1,0 +1,17 @@
+@use "../abstract/" as *;
+
+.section--3 {
+    height: max-content;
+    min-height: max-content;
+
+    .accordion-body {
+        height:max-content;
+        min-height: max-content;
+    }
+
+    .project-image {
+        height: 100%;
+        object-fit: contain;
+    }
+
+}

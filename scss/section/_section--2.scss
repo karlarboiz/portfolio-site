@@ -1,0 +1,43 @@
+@use "../abstract/" as *;
+
+.section--2 {
+    height: max-content;
+
+    .feature {
+        border-radius: $card-radius;
+    }
+
+   
+    .feature:hover {
+        background-color: aqua;
+        scale: 1.05;
+        z-index: 5;
+        transition: background-color .25s ease-in,
+        scale .25s ease-in,
+        z-index .25s ease-out;
+    }
+
+    .feature:not(.feature:hover) {
+        background-color: white;
+        scale: 1;
+        z-index: 0;
+        transition: background-color .25s ease-in,
+        scale .25s ease-in,
+        z-index .25s ease-out;
+    }
+  
+    .feature-icon {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .feature-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+  
+}

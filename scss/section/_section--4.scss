@@ -1,0 +1,14 @@
+@use "../abstract/" as *;
+
+.section--4 {
+    min-height: max-content;
+
+    &__item {
+
+        svg {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        
+    }
+}
