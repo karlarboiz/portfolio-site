@@ -12072,9 +12072,28 @@ body {
     left: calc(15vw - 2.5% - 5%);
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .section--5__first--container {
-    left: 0;
+    left: calc(22.5vw - 2.5% - 15%);
+    width: 20rem;
+    max-width: 20rem;
+  }
+  .section--5__second--container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section--5__first--container {
+    min-height: 15rem;
+    width: 85%;
+    left: calc(27vw - 2.5% - 5%);
+    top: 0;
+  }
+  .section--5__second--container {
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    text-align: center;
   }
 }
 
