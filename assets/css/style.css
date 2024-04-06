@@ -11908,18 +11908,39 @@ body {
   }
 }
 .section--2 {
-  height: max-content;
+  min-height: 40rem;
 }
 .section--2 .feature {
   border-radius: 0.45rem;
   position: relative;
   padding: 0.5rem;
 }
+.section--2 .feature .common-header {
+  position: relative;
+}
+.section--2 .feature .common-header::before {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: calc(15% + 1.5rem);
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.section--2 .feature .common-text {
+  position: relative;
+  height: calc(30% - 1.25rem);
+  min-height: calc(30% - 1.25rem);
+}
+.section--2 .feature button {
+  margin: 0.5rem 0;
+}
 .section--2 .feature:hover {
-  background-color: aqua;
   scale: 1.05;
   z-index: 5;
-  /* From https://css.glass */
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -11929,7 +11950,7 @@ body {
 }
 .section--2 .feature:not(.feature:hover) {
   background-color: white;
-  scale: 1;
+  scale: 0.9;
   z-index: 0;
   box-shadow: none;
   backdrop-filter: none;
@@ -12008,7 +12029,7 @@ body {
 .section--5__first--container {
   position: absolute;
   top: 2.5rem;
-  left: calc(22.5vw - 5%);
+  left: calc(30vw - 2.5% - 5%);
   width: 25rem;
   max-width: 25rem;
   min-height: 30rem;
@@ -12037,6 +12058,24 @@ body {
   left: 75%;
   width: 45%;
   transform: translate(-50%, 50%);
+}
+@media only screen and (max-width: 1375px) {
+  .section--5__first--container {
+    left: calc(22.5vw - 2.5% - 5%);
+  }
+  .section--5__second--container {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section--5__first--container {
+    left: calc(15vw - 2.5% - 5%);
+  }
+}
+@media screen and (max-width: 850px) {
+  .section--5__first--container {
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
     &__first--container {
         position: absolute;
         top: calc($section-height - 32.5rem);
-        left: calc(22.5vw - 5%);
+        left: calc((30vw - 2.5%) - 5%);
 
         width: 25rem;
         max-width: 25rem;
@@ -46,5 +46,38 @@
 
 
     }
+
+    @media only screen and (max-width: 1375px) {
+        &__first--container {
+            left: calc((22.5vw - 2.5%) - 5%);
+        
+           
+        }
+
+        &__second--container{
+            width: 35%;
+        }
+      }
+
+
+    @media screen and (max-width: 1000px) {
+        &__first--container {
+            left: calc((15vw - 2.5%) - 5%);
+        
+           
+        }
+        
+    }
+
+    @media screen and (max-width: 850px) {
+        &__first--container {
+            left: 0;
+        
+           
+        }
+        
+    }
+
+    
 }
 
