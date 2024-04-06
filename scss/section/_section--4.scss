@@ -4,11 +4,14 @@
     min-height: max-content;
 
     &__item {
-
+        position: relative;
+        z-index: 5;
         svg {
             height: 2.5rem;
             width: 2.5rem;
         }
-        
+
+
+       
     }
 }
