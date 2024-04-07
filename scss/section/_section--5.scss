@@ -62,9 +62,7 @@
 
     @media screen and (max-width: 1000px) {
         &__first--container {
-            left: calc((15vw - 2.5%) - 5%);
-        
-           
+            left: calc((15vw - 2.5%) - 5%);   
         }
         
     }
@@ -88,7 +86,8 @@
         &__first--container {
             min-height: 15rem;
             width: 85%;
-            left:calc((27vw - 2.5%) - 5%);
+            left:50%;
+            transform: translate(-50%,0%);
             top: 0;
     
         }

@@ -12109,7 +12109,8 @@ nav::after {
   .section--5__first--container {
     min-height: 15rem;
     width: 85%;
-    left: calc(27vw - 2.5% - 5%);
+    left: 50%;
+    transform: translate(-50%, 0%);
     top: 0;
   }
   .section--5__second--container {
