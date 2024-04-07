@@ -11942,14 +11942,14 @@ body {
 }
 .section--2 .feature .common-text {
   position: relative;
-  height: calc(35.2% - 1.25rem);
-  min-height: calc(35.2% - 1.25rem);
+  height: calc(34% - 1.25rem);
+  min-height: calc(34% - 1.25rem);
 }
 .section--2 .feature button {
   margin: 0.5rem 0;
 }
 .section--2 .feature:hover {
-  scale: 1.05;
+  scale: 1.02;
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -11960,7 +11960,7 @@ body {
 }
 .section--2 .feature:not(.feature:hover) {
   background-color: white;
-  scale: 0.9;
+  scale: 1;
   z-index: 0;
   box-shadow: none;
   backdrop-filter: none;
