@@ -11922,13 +11922,22 @@ body {
   content: "";
   display: block;
   height: 0.5rem;
-  width: 100%;
+  width: 37.5%;
   background-color: black;
   position: absolute;
   top: calc(15% + 1.5rem);
   left: 0;
   padding: 0;
   margin: 0;
+  transition: width 0.25s ease-in;
+}
+.section--2 .feature:hover .common-header::before {
+  width: 100%;
+  transition: width 0.25s ease-in;
+}
+.section--2 .feature:not(.feature:hover) .common-header::before {
+  width: 37.5%;
+  transition: width 0.25s ease-in;
 }
 .section--2 .feature .common-text {
   position: relative;
