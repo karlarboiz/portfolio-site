@@ -26,8 +26,8 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">services</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">services</a></li> 
         </ul>
         
       </div>
@@ -56,7 +56,7 @@
   </main>
 
 
-  <section class="container px-4 py-5 section--2 my-5" id="featured-3">
+  <section class="container px-4 py-5 section--2 my-5" id="services">
     <h5 class="pb-2 border-bottom common-header">Developments I can work on!</h5>
     <div class="row g-4 py-5 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1  justify-content-evenly">
       <div class="feature col ">
@@ -105,7 +105,7 @@
     </div>
 </section>
 
-<section class="section--3 container">
+<section class="section--3 container" id="projects">
   <div class="accordion" id="accordionPanelsStayOpenExample">
     <div class="accordion-item mb-3">
       <h2 class="accordion-header">
@@ -167,7 +167,7 @@
 
 </section>
 
-<section class="section--4 container mt-5 bg-light">
+<section class="section--4 container mt-5 bg-light" id="contacts">
   <div class="row align-items-center py-5 text-center justify-content-evenly">
     <aside class="col-lg-2 col-md-6 mt-2 section--4__item"> 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -207,12 +207,15 @@
   </div> 
 </section>
 
-<section class="section--5 my-5 container-fluid">
+<section class="section--5 my-5 container-fluid" id="about">
   <div class="row h-100">
     <div class="col-lg-5 col-md-4 col-sm-6 col-6 section--5__col--main">
       <img src="assets/images/about-me/bckg-img.jpg" alt="Background-Image" class="img-fluid section--5__col--main-img">
       <div class="section--5__first--container">
-        <img src="assets/images/profile/about--pic.png" alt="About Picture" class="img-fluid">
+        <div class="img-container">
+
+          <img src="assets/images/profile/about--pic.png" alt="About Picture" class="img-fluid">
+        </div>
         <aside>
 
           <p>Karl James</p>
@@ -233,10 +236,8 @@
 
         My skills, enthusiasm and experince would surely be great help to your team
       </p>
-
-      <button class="btn">See Projects</button>
-
-      <button class="btn">Contact Me</button>
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#contacts" class="btn">Contact</a>
       </aside>
     </div>
   </div>

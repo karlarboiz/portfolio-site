@@ -11852,6 +11852,7 @@ textarea.form-control-lg {
 
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .common-text {
@@ -12074,22 +12075,27 @@ nav::after {
   min-height: 27rem;
   border-radius: 1.25rem;
   text-align: center;
-  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
-  border-radius: 16px;
+  border-radius: 0.45rem;
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(233, 228, 131, 0.9);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background-color: aliceblue;
 }
 .section--5__first--container img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 1.25rem auto;
   object-fit: cover;
+}
+.section--5__first--container .img-container {
+  height: 40%;
+  width: 100%;
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-radius: 0.45rem 0.45rem 0 0;
 }
 .section--5__second--container {
   position: absolute;
