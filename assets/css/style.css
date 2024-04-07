@@ -11990,14 +11990,15 @@ body {
 nav::after {
   content: "";
   display: block;
-  height: 10px;
-  background-color: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
   transform-origin: left;
   scale: 0 1;
+  border-radius: 0.5px;
   animation: moveit linear 2s;
   animation-timeline: scroll();
 }
