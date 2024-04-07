@@ -1,6 +1,26 @@
 @use "../abstract/" as *;
 
+nav::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: green($color: #000000);
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    transform-origin: left;
+    scale: 0 1;
+    animation: moveit linear 2s;
+    animation-timeline: scroll();
+}
 
+
+@keyframes moveit {
+    to {
+        scale: 1 1;
+    }
+}
 .navbar-brand {
     font-weight: $main-header--font-weight;
     font-size:$common-header-size; 
