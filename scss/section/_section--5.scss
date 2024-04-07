@@ -1,8 +1,15 @@
 @use "../abstract/" as *;
-
+@use "../components/mixin" as *;
 .section--5 {
     height: $section-height;
     position: relative;
+
+    &__col--main-img  {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 100%;
+    }
     h1 {
         font-size: $main-font--size;
         font-weight: $main-header--font-weight;
@@ -14,16 +21,16 @@
 
         width: 25rem;
         max-width: 25rem;
-        min-height: 30rem;
+        min-height: 27rem;
         border-radius: 1.25rem;
         text-align: center;
-        background: $main--color;
+        
+        @include backgroundMixin;
         border-radius: 16px;
         box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(233, 228, 131, 0.28);
-        
+        border: 1px solid rgba(233, 228, 131, 0.90);
 
         display: flex;
         justify-content: center;
@@ -85,6 +92,7 @@
     @media screen and (max-width: 650px) {
         &__first--container {
             min-height: 15rem;
+            top: -15%;
             width: 85%;
             left:calc(50% + 2.5vw);
             transform: translate(-50%,0%);
