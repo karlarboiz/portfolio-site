@@ -86,7 +86,7 @@
         &__first--container {
             min-height: 15rem;
             width: 85%;
-            left:50%;
+            left:calc(50% + 2.5vw);
             transform: translate(-50%,0%);
             top: 0;
     
