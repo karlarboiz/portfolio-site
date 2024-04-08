@@ -75,16 +75,7 @@
         }
       }
 
-
     @media screen and (max-width: 1000px) {
-        &__first--container {
-            left: calc((15vw - 2.5%) - 5%);   
-        }
-        
-    }
-
-
-    @media screen and (max-width: 800px) {
         &__first--container {
             min-height: fit-content;
             top: -15%;
