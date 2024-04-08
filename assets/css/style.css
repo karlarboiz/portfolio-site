@@ -12119,16 +12119,6 @@ nav::after {
 }
 @media screen and (max-width: 800px) {
   .section--5__first--container {
-    left: calc(22.5vw - 2.5% - 15%);
-    width: 20rem;
-    max-width: 20rem;
-  }
-  .section--5__second--container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 650px) {
-  .section--5__first--container {
     min-height: fit-content;
     top: -15%;
     width: 85%;
@@ -12144,7 +12134,7 @@ nav::after {
     text-align: center;
     color: #EADFB4;
   }
-  .section--5__second--container .common-text {
+  .section--5 .common-text {
     font-weight: bolder;
   }
 }

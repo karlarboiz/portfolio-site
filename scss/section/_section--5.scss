@@ -83,22 +83,8 @@
         
     }
 
-    
+
     @media screen and (max-width: 800px) {
-        &__first--container {
-            left: calc((22.5vw - 2.5%) - 15%);
-            width: 20rem;
-            max-width: 20rem;
-           
-        }
-        &__second--container{
-            width: 50%;
-       
-        }
-    }
-
-
-    @media screen and (max-width: 650px) {
         &__first--container {
             min-height: fit-content;
             top: -15%;
@@ -106,7 +92,6 @@
             left:calc(50% + 2.5vw);
             transform: translate(-50%,0%);
             top: 0;
-    
         }
 
         &__second--container{
@@ -117,9 +102,11 @@
             text-align: center;
             color: $main--color;
 
-            .common-text {
-                font-weight: bolder;
-            }
+            
+        }
+
+        .common-text {
+            font-weight: bolder;
         }
     }
 
