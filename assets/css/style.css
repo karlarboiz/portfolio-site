@@ -12114,6 +12114,11 @@ nav::after {
 }
 @media screen and (max-width: 1000px) {
   .section--5__first--container {
+    left: calc(15.5vw - 5.5% - 5%);
+  }
+}
+@media screen and (max-width: 770px) {
+  .section--5__first--container {
     min-height: fit-content;
     top: -15%;
     width: 85%;
