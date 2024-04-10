@@ -12139,4 +12139,20 @@ nav::after {
   }
 }
 
+.section--6 {
+  height: 35rem;
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+.section--6 aside {
+  margin: 0.25rem auto;
+  width: calc(80% - 10vw);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section--6 aside span {
+  background-color: black;
+}
+
 /*# sourceMappingURL=style.css.map */
