@@ -4,6 +4,13 @@
     min-height: max-content;
 
     &__item {
+        box-sizing: border-box;
+        text-align: center;
+        * {
+            display: block;
+                text-align: center;
+                margin: 0 auto;
+        }
         position: relative;
         z-index: 5;
         svg {

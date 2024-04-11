@@ -12044,8 +12044,15 @@ nav::after {
   min-height: max-content;
 }
 .section--4__item {
+  box-sizing: border-box;
+  text-align: center;
   position: relative;
   z-index: 5;
+}
+.section--4__item * {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 .section--4__item svg {
   height: 2.5rem;
@@ -12084,7 +12091,7 @@ nav::after {
 .section--5__first--container img {
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  border-radius: 69% 0% 31% 45%/26% 34% 48% 46%;
   margin: 1.25rem auto;
   object-fit: cover;
 }
@@ -12140,8 +12147,17 @@ nav::after {
 }
 
 .section--6 {
-  height: 35rem;
+  min-height: calc(35rem - 50%);
   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+.section--6 aside {
+  margin: 0.25rem auto;
+  width: calc(100% - 0vw);
+  height: 100%;
+}
+.section--6 aside span {
+  padding: 0.75rem 1.25rem;
+  margin: 0 1.25rem;
 }
 .section--6 aside {
   margin: 0.25rem auto;
