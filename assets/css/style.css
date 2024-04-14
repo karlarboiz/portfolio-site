@@ -12056,6 +12056,7 @@ nav::after {
   justify-content: center;
   align-items: center;
   position: relative;
+  position: relative;
   z-index: 5;
 }
 .section--4__item * {
@@ -12063,13 +12064,22 @@ nav::after {
   text-align: center;
   margin: 0 auto;
 }
-.section--4__item svg {
+.section--4__item svg[data-icon=clipboard-svg] {
+  height: 1.05rem;
+  width: 1.05rem;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 1.25rem);
+}
+.section--4__item svg[data-icon=main-svg] {
   height: 1.75rem;
   width: 1.75rem;
 }
 .section--4__item .common-highlight {
-  height: 1.5rem;
-  text-overflow: clip;
+  height: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
 }
 .section--4__item:hover {
   background-color: rgba(255, 255, 255, 0.2);

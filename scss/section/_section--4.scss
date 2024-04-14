@@ -16,7 +16,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       
+        position: relative;
+    
         * {
             display: block;
                 text-align: center;
@@ -24,15 +25,25 @@
         }
         position: relative;
         z-index: 5;
-        svg {
+
+        svg[data-icon="clipboard-svg"] {
+            height: 1.05rem;
+            width: 1.05rem;
+            position: absolute;
+            top: 0;
+            left: calc(100% - 1.25rem);
+        }
+
+        svg[data-icon="main-svg"] {
             height: 1.75rem;
             width: 1.75rem;
         }
 
         .common-highlight {
-            height: 1.5rem;
-            text-overflow:clip;
-       
+            height: 1rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
         }
        
     }
