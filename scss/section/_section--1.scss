@@ -4,10 +4,11 @@
     height: $section-height;
     min-height: $section-height;
     position: relative;
+
     &__main {
         height: 100%;
     }
-    
+
     h1 {
         font-size: $main-font--size;
         font-weight: $main-header--font-weight;
@@ -22,57 +23,5 @@
     &__col {
         z-index: 5;
     }
-
-}
-
-// .section--1::after {
-//     content: "\f121";
-//     height: 25rem;
-//     min-height:25rem;
-//     width: 30rem;
-//     max-width: 30rem;
-
-//     // border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
-    
-//     // /* From https://css.glass */
-//     // background: rgba(255, 255, 255, 0.2);
-//     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-//     // backdrop-filter: blur(5px);
-//     // -webkit-backdrop-filter: blur(5px);
-//     // border: 1px solid rgba(255, 255, 255, 0.3);
-
-//     position: absolute;
-//     top: -20%;
-//     left: 50%;
-//     transform: translate(-50%, 50%);
-//     z-index: 0;
-//     // animation: moveSomething ease-in-out infinite 7s; 
-// }
-
-
-@keyframes moveSomething {
-    0% {
-        border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
-   
-    }
-    25%{
-        border-radius: 80% 67% 20% 5% / 12% 45% 7% 34%;
-    }
-
-    50% {
-        border-radius: 100% 90% 100% 93% / 52% 50% 30% 64%;
-    
-    }
-
-    75% {
-        border-radius: 78% 56% 81% 73% / 68% 92% 77% 99%;
-      
-    }
-
-    100% {
-        border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
-       
-    }
-
 
 }

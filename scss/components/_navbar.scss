@@ -1,5 +1,7 @@
 @use "../abstract/" as *;
 @use "../components/mixin" as *;
+
+
 nav::after {
     content: "";
     display: block;
@@ -7,7 +9,7 @@ nav::after {
     @include backgroundMixin;
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1000;
     transform-origin: left;
     scale: 0 1;
@@ -22,13 +24,13 @@ nav::after {
         scale: 1 1;
     }
 }
-.navbar-brand {
-    font-weight: $main-header--font-weight;
-    font-size:$common-header-size; 
+
+.navbar-brand svg {
+    height: 1.5rem;
 
 }
 
-.nav-item a{
+.nav-item a {
 
     font-weight: 600;
 }
