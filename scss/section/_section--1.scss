@@ -1,8 +1,8 @@
 @use "../abstract/" as *;
 
 .section--1 {
-    height: $section-height;
-    min-height: $section-height;
+    height: max-content;
+    min-height: max-content;
     position: relative;
 
     &__main {
@@ -17,13 +17,17 @@
     }
 
     .profile--pic {
-        height: 80%;
-        width: 100%;
+        height: max-content;
+        width: max-content;
         border-radius: .75rem;
     }
 
     &__col {
         z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
 
 }

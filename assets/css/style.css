@@ -11875,8 +11875,8 @@ body {
 }
 
 .section--1 {
-  height: 35rem;
-  min-height: 35rem;
+  height: max-content;
+  min-height: max-content;
   position: relative;
 }
 .section--1__main {
@@ -11889,12 +11889,15 @@ body {
   padding: 0;
 }
 .section--1 .profile--pic {
-  height: 80%;
-  width: 100%;
+  height: max-content;
+  width: max-content;
   border-radius: 0.75rem;
 }
 .section--1__col {
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section--2 {
