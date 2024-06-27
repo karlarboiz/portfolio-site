@@ -12,10 +12,12 @@
     h1 {
         font-size: $main-font--size;
         font-weight: $main-header--font-weight;
+        margin: 0;
+        padding: 0;
     }
 
     .profile--pic {
-        height: 55%;
+        height: 80%;
         width: 100%;
         border-radius: .75rem;
     }
