@@ -11887,7 +11887,7 @@ body {
   font-weight: 700;
 }
 .section--1 .profile--pic {
-  min-height: 75%;
+  height: 55%;
   width: 100%;
   border-radius: 0.75rem;
 }
