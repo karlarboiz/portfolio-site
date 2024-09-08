@@ -11860,7 +11860,7 @@ body {
 }
 
 .common-text {
-  font-size: 0.82rem;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -11870,7 +11870,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 0.82rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -11883,21 +11883,39 @@ body {
   height: 100%;
 }
 .section--1 h1 {
-  font-size: 2.75rem;
+  font-size: 4.5rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
 .section--1 .profile--pic {
-  height: max-content;
-  width: max-content;
-  border-radius: 0.75rem;
+  height: 100%;
+  width: 30rem;
+  border-radius: 14.5rem;
 }
 .section--1__col {
   z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.section--1__col--item-1::before, .section--1__col--item-1::after {
+  content: "";
+  width: 3.5rem;
+  height: 5rem;
+  background-color: red;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  position: absolute;
+}
+.section--1__col--item-1::before {
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+.section--1__col--item-1::after {
+  bottom: 0;
+  transform: rotate(225deg);
 }
 
 .section--2 {
@@ -12048,6 +12066,20 @@ nav::after {
   font-weight: 600;
 }
 
+.indicator {
+  width: fit-content;
+  padding: 0.5rem 0.85rem;
+  border: 0.25rem dashed black;
+  border-radius: 0.5rem;
+}
+.indicator svg {
+  fill: 0.25rem;
+}
+.indicator-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
 .section--3 {
   height: max-content;
   min-height: max-content;
@@ -12124,7 +12156,7 @@ nav::after {
   aspect-ratio: 100%;
 }
 .section--5 h1 {
-  font-size: 2.75rem;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 .section--5__second--container {

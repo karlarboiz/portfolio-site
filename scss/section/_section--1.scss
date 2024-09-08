@@ -17,9 +17,10 @@
     }
 
     .profile--pic {
-        height: max-content;
-        width: max-content;
-        border-radius: .75rem;
+        height: 100%;
+        width: 30rem;
+        border-radius: 14.5rem;
+    
     }
 
     &__col {
@@ -27,6 +28,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+
+        &--item-1::before,
+        &--item-1::after {
+            content: "";
+            width: 3.5rem;
+            height: 5rem;
+            background-color: red;
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            position: absolute;
+        }
+        
+        &--item-1::before {
+            
+            
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        &--item-1::after {
+
+            bottom: 0;
+            transform: rotate(225deg);
+        }
+
+        
     }
 
 

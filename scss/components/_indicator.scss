@@ -1,0 +1,17 @@
+.indicator {
+    // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    
+    width: fit-content;
+    padding: .5rem .85rem;
+    border: .25rem dashed black;
+    border-radius: .5rem;
+
+    svg {
+        fill: .25rem;
+    }
+
+    &-text {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+}
