@@ -1,15 +1,17 @@
 @use "../abstract/" as *;
+@use "../components/mixin" as *;
 
 .section--1 {
+    @include mainSectionMixin;
     height: max-content;
     min-height: max-content;
     position: relative;
-
     &__main {
         height: 100%;
     }
 
     h1 {
+        color: $main--color;
         font-size: $main-font--size;
         font-weight: $main-header--font-weight;
         margin: 0;
@@ -32,24 +34,23 @@
 
         &--item-1::before,
         &--item-1::after {
+            
             content: "";
             width: 3.5rem;
             height: 5rem;
-            background-color: red;
+            @include shapesMixin;
             clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
             position: absolute;
         }
         
         &--item-1::before {
-            
-            
             top: 0;
             left: 0;
             transform: rotate(45deg);
         }
 
         &--item-1::after {
-
+            left: calc(80% + .5rem);
             bottom: 0;
             transform: rotate(225deg);
         }
