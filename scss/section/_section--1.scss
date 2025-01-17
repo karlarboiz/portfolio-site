@@ -10,14 +10,20 @@
         height: 100%;
     }
 
+    .indicator-text {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
     .main--header {
-        color: $main--color;
+        color: $common--text-color;
         font-size: $main-font--size;
         font-weight: $main-header--font-weight;
         margin: 0;
         padding: 0;
         line-height: 4.25rem;
         color: $common--text-color;
+        font-family: $special-font--style;
     }
 
     .profile--pic {

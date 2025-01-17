@@ -8,7 +8,10 @@
     background-image: linear-gradient(to right, $secondary--color, $calltoaction);;
 }
 
-
 @mixin mainSectionMixin{
     background: radial-gradient($secondary--color, hsl(240, 20%, 97%));
+}
+
+@mixin fillSVGColor {
+    fill: linear-gradient(to right, #fc5c7d, #6a82fb);
 }

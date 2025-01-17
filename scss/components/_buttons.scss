@@ -3,12 +3,8 @@
 
 .btn {
     padding: $btn-padding;
-
     border-radius: $btn-radius;
-
     font-weight: 600;
-
-    
     position: relative;
 
 }
@@ -25,9 +21,8 @@
     width: 100%;
     transform: scaleX(0);
     z-index: -1;
-
-    transform-origin: left;
     @include backgroundMixin;
+    transform-origin: left;
 
     transition: transform 200ms ease-in;
 }

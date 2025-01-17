@@ -26,11 +26,66 @@ nav::after {
 }
 
 .navbar-brand svg {
-    height: 1.5rem;
-
+    height: 1.5rem * 2;
+    animation: bell-swing 2.5s ease-in-out infinite;
+    transform-origin: top center; 
 }
+
+.navbar-brand svg:hover {
+    animation-play-state: paused;
+}
+
+@keyframes bell-swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+   
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    
+    }
+  }
+
+
 
 .nav-item a {
-
-    font-weight: 600;
+    font-weight: 700;
+    font-size: $sub-header-size;
 }
+
+.nav-link__item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: black; /* Default color */
+    transition: transform 0.2s ease-out, color 0.3s ease-out; /* Smooth scaling and color transitions */
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-size: 200%; /* Larger background for animation */
+    background-position: right center; /* Start hidden gradient */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: black; /* Start with black text */
+  }
+
+  .nav-link__item:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    -webkit-text-fill-color: transparent; /* Reveal gradient */
+    background-position: left center; /* Gradient moves left to right */
+    transition: transform 0.2s ease-out, background-position 0.3s ease-in-out;
+  }
+
+  .nav-link__item:not(:hover) {
+    -webkit-text-fill-color: black; /* Revert to black */
+    background-position: right center; /* Gradient moves right to left */
+    transition: background-position 0.3s ease-in-out, transform 0.2s ease-in;
+  }
