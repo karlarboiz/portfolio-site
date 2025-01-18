@@ -11860,7 +11860,7 @@ body {
 }
 
 .common-text {
-  font-size: 1.15rem;
+  font-size: 0.85rem;
   padding: 0;
   margin: 0;
 }
@@ -11870,7 +11870,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 1.15rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 

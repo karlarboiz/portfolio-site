@@ -6,7 +6,7 @@ const targetTitleElement = document.querySelector(".main--header");
 
 const options = {
     root: null,
-    rootMargin: "10px",
+    rootMargin: "500px",
     threshold: .5,
   };
 
