@@ -1,8 +1,11 @@
 @use "../abstract/" as *;
 @use "../components/mixin" as *;
+:root {
+    --from-to--shape-origin: calc(80% + .5rem);
 
+}
 .section--1 {
-    background-color: black;
+   
     height: max-content;
     min-height: max-content;
     position: relative;
@@ -34,6 +37,7 @@
     }
 
     &__col {
+    
         z-index: 5;
         display: flex;
         align-items: center;
@@ -41,8 +45,7 @@
         position: relative;
 
         &--item-1::before,
-        &--item-1::after {
-            
+        &--item-1::after {    
             content: "";
             width: 3.5rem;
             height: 5rem;
@@ -52,18 +55,39 @@
         }
         
         &--item-1::before {
-            top: 0;
+            top: 0; 
             left: 0;
-            transform: rotate(45deg);
+            transform: rotate(225deg) ;  /* Small size */
+            animation: moveAndTransform 2.5s ease-in-out forwards;
         }
 
         &--item-1::after {
-            left: calc(80% + .5rem);
+            left: var(--from-to--shape-origin);
             bottom: 0;
             transform: rotate(225deg);
         }
 
-        
+        /* Keyframes for animation */
+        @keyframes moveAndTransform {
+          0% {
+            top: 10%; /* Start from below */
+            left: 10%;
+            transform: scale(0.1); /* Small circle */
+            clip-path: circle(50%);
+          }
+          50% {
+            top: 5%; /* Move up halfway */
+            left: 5%;
+            transform: scale(1); /* Full size */
+            clip-path: circle(50%); /* Still a circle */
+          }
+          100% {
+            top: 0; /* Final position */
+            left: 0;
+            transform: rotate(45deg); /* Maintain size */
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
+          }
+        }
     }
 
 

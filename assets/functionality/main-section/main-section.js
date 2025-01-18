@@ -17,12 +17,12 @@ export function typingAnimation(element,speed=100){
 }
 
 export function typingAnimationRemoving(element, speed = 100) {
-    const titleText = element.innerHTML;
+    const titleText = element.textContent;
     let i = titleText.length;
 
     function remove() {
         if (i > 0) {
-            element.innerHTML = element.innerHTML.slice(0, -1);
+            element.innerHTML = titleText.slice(0, -1);
             i--;
             setTimeout(remove, speed);
         }
