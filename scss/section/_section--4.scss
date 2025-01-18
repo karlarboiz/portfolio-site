@@ -1,66 +1,20 @@
 @use "../abstract/" as *;
 
-.section--4 {
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    min-height: max-content;
-
-    &__item {
-        box-sizing: border-box;
-        text-align: center;
-        min-height: 7.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    
-        * {
-            display: block;
-                text-align: center;
-                margin: 0 auto;
-        }
-        position: relative;
-        z-index: 5;
-
-        svg[data-icon="clipboard-svg"] {
-            height: 1.05rem;
-            width: 1.05rem;
-            position: absolute;
-            top: 0;
-            left: calc(100% - 1.25rem);
-            cursor: pointer;
-        }
-
-        svg[data-icon="main-svg"] {
-            height: 1.75rem;
-            width: 1.75rem;
-        }
-
-        .common-highlight {
-            height: 1.25rem;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            width: 100%;
-        }
-       
-    }
-
-    &__item:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: $card-radius;
-        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        transform: translateY(-.25rem);
-        transition: background-color .25s ease-in,
-        border-radius .25s ease-in,
-        box-shadow .25s ease-in,
-        backdrop-filter .25s ease-in,
-        -webkit-backdrop-filter .25s ease-in,
-        transform .25s ease-in;
-    }
-}
+.contact-item i {
+    font-size: 2.5rem;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact-item a:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .common-highlight {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
