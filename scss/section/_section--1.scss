@@ -2,7 +2,7 @@
 @use "../components/mixin" as *;
 
 .section--1 {
-    @include mainSectionMixin;
+    background-color: black;
     height: max-content;
     min-height: max-content;
     position: relative;

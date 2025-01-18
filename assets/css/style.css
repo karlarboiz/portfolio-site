@@ -11875,7 +11875,7 @@ body {
 }
 
 .section--1 {
-  background: radial-gradient(#9BB0C1, hsl(240, 20%, 97%));
+  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
