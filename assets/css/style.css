@@ -11900,6 +11900,11 @@ body {
   color: #FFDB58;
   font-family: "Share Tech Mono", serif;
 }
+@media only screen and (max-width: 600px) {
+  .section--1 .main--header {
+    font-size: 3.5rem;
+  }
+}
 .section--1 .profile--pic {
   height: 100%;
   width: 30rem;

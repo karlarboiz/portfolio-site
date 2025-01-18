@@ -28,6 +28,12 @@
         color: $common--text-color;
         font-family: $special-font--style;
     }
+    @media only screen and (max-width: 600px) {
+        .main--header {
+            font-size: 3.5rem;
+        }
+      }
+
 
     .profile--pic {
         height: 100%;
