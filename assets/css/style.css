@@ -11879,7 +11879,6 @@ body {
 }
 
 .section--1 {
-  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -11937,7 +11936,6 @@ body {
 .section--1__col--item-1::before {
   top: 0;
   transform: translate(-15rem, 1.5rem) rotate(45deg);
-  animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
 }
 .section--1__col--item-1::after {
   bottom: 0;
@@ -11970,6 +11968,14 @@ body {
     bottom: 0;
     transform: rotate(225deg);
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section--1__col--item-1::before {
+    transform: translate(-8.5rem, -1.5rem) rotate(45deg);
+  }
+  .section--1__col--item-1::after {
+    transform: translate(8.5rem, 2.5rem) rotate(220deg);
   }
 }
 
