@@ -72,11 +72,10 @@
         @keyframes moveAndTransformForBefore {
           0% {
             transform: translate(-9.5rem,5.5rem) scale(.1) rotate(0deg);
-            clip-path: circle(50%);
+        
           }
           50% {
-            transform: translate(-12.5rem,5.5rem) scale(1) rotate(25deg);
-            clip-path: circle(50%); /* Still a circle */
+            transform: translate(-12.5rem,2.75rem) scale(1) rotate(25deg);
           }
           100% {
             transform: translate(-15rem,0rem) rotate(45deg);
