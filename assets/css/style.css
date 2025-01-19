@@ -11909,9 +11909,6 @@ body {
   .section--1__col--item-1 {
     margin: 0 auto;
   }
-  .section--1__col--item-2 {
-    text-align: center;
-  }
   .section--1 .profile--pic {
     height: 100%;
     width: 25rem;
@@ -12047,6 +12044,11 @@ body {
   height: 80%;
   border-radius: 0.45rem;
   object-fit: cover;
+}
+.section--2 .section-header {
+  font-size: 1.75rem;
+  font-style: "Share Tech Mono", serif;
+  font-weight: 800;
 }
 
 .btn {

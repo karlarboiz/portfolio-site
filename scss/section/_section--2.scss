@@ -12,6 +12,7 @@
 
         .common-header {
             position: relative;
+           
         }
 
         .common-header::before {
@@ -97,9 +98,9 @@
         }
     }
 
-
-
-
-
-
+    .section-header {
+        font-size: $sub-header-size;
+        font-style: $special-font--style;
+        font-weight: $main-header--font-weight;
+    }
 }
