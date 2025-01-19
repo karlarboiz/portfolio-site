@@ -11916,6 +11916,9 @@ body {
     height: 100%;
     width: 25rem;
   }
+  .section--1 .main--header {
+    font-size: 3.75rem;
+  }
 }
 .section--1__col {
   z-index: 5;
@@ -11975,11 +11978,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  body {
-    background-color: black;
-  }
-}
 .section--2 {
   min-height: max-content;
 }
