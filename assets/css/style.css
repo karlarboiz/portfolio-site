@@ -11924,31 +11924,24 @@ body {
 }
 .section--1__col--item-1::before {
   top: 0;
-  left: 0;
+  transform: translate(-15rem, 0rem) rotate(45deg);
   animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
 }
 .section--1__col--item-1::after {
-  left: var(--from-to--shape-origin);
-  bottom: 0;
-  animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
+  left: 65%;
+  transform: translateY(10rem);
 }
 @keyframes moveAndTransformForBefore {
   0% {
-    top: 10%; /* Start from below */
-    left: 10%;
-    transform: scale(0.1); /* Small circle */
+    transform: translate(-9.5rem, 5.5rem) scale(0.1) rotate(0deg);
     clip-path: circle(50%);
   }
   50% {
-    top: 5%; /* Move up halfway */
-    left: 5%;
-    transform: scale(1); /* Full size */
+    transform: translate(-12.5rem, 5.5rem) scale(1) rotate(25deg);
     clip-path: circle(50%); /* Still a circle */
   }
   100% {
-    top: 0; /* Final position */
-    left: 15%;
-    transform: rotate(45deg); /* Maintain size */
+    transform: translate(-15rem, 0rem) rotate(45deg);
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
   }
 }
