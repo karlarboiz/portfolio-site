@@ -11860,7 +11860,7 @@ body {
 }
 
 .common-text {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   padding: 0;
   margin: 0;
 }
@@ -11870,7 +11870,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -11879,6 +11879,7 @@ body {
 }
 
 .section--1 {
+  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -11924,15 +11925,14 @@ body {
 .section--1__col--item-1::before {
   top: 0;
   left: 0;
-  transform: rotate(225deg); /* Small size */
-  animation: moveAndTransform 2.5s ease-in-out forwards;
+  animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
 }
 .section--1__col--item-1::after {
   left: var(--from-to--shape-origin);
   bottom: 0;
-  transform: rotate(225deg);
+  animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
 }
-@keyframes moveAndTransform {
+@keyframes moveAndTransformForBefore {
   0% {
     top: 10%; /* Start from below */
     left: 10%;
@@ -11947,8 +11947,28 @@ body {
   }
   100% {
     top: 0; /* Final position */
-    left: 0;
+    left: 15%;
     transform: rotate(45deg); /* Maintain size */
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
+  }
+}
+@keyframes moveAndTransformForAfter {
+  0% {
+    top: 90%; /* Start from below */
+    left: 10%;
+    transform: scale(0.1); /* Small circle */
+    clip-path: circle(50%);
+  }
+  50% {
+    top: 100%; /* Move up halfway */
+    left: var(--from-to--shape-origin)/2;
+    transform: scale(1); /* Full size */
+    clip-path: circle(50%); /* Still a circle */
+  }
+  100% {
+    left: var(--from-to--shape-origin);
+    bottom: 0;
+    transform: rotate(225deg);
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
   }
 }
@@ -12045,7 +12065,7 @@ body {
   z-index: -1;
   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
   transform-origin: left;
-  transition: transform 1.5s ease-in;
+  transition: transform 0.45s ease-in;
 }
 
 .btn:hover::before,

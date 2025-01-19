@@ -24,7 +24,7 @@
     z-index: -1;
     @include backgroundMixin;
     transform-origin: left;
-    transition: transform 1.5s ease-in;
+    transition: transform .45s ease-in;
 }
 
 .btn:hover::before,
