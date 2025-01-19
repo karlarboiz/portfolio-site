@@ -123,7 +123,7 @@
                 // animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
             }
     
-            &--item-1::after {
+            &--item-1::after {  
                 // bottom: 0;
                 transform: translate(8.5rem,2.5rem) rotate(220deg);
                 // animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
