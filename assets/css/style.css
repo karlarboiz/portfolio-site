@@ -11879,7 +11879,6 @@ body {
 }
 
 .section--1 {
-  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -11905,6 +11904,18 @@ body {
   height: 100%;
   width: 30rem;
   border-radius: 14.5rem;
+}
+@media only screen and (max-width: 800px) {
+  .section--1__col--item-1 {
+    margin: 0 auto;
+  }
+  .section--1__col--item-2 {
+    text-align: center;
+  }
+  .section--1 .profile--pic {
+    height: 100%;
+    width: 25rem;
+  }
 }
 .section--1__col {
   z-index: 5;
@@ -11964,6 +11975,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+}
 .section--2 {
   min-height: max-content;
 }

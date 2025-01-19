@@ -5,10 +5,12 @@
 
 }
 .section--1 {
-   background-color: black;
+   
     height: max-content;
     min-height: max-content;
     position: relative;
+
+    
     &__main {
         height: 100%;
     }
@@ -35,6 +37,21 @@
         width: 30rem;
         border-radius: 14.5rem;
     
+    }
+
+    @media only screen and (max-width: 800px) {
+        &__col--item-1{
+            margin: 0 auto;
+        }
+
+        &__col--item-2 {
+            text-align: center;
+        }
+        
+        .profile--pic {
+            height: 100%;
+            width: 25rem;
+        }
     }
 
     &__col {
@@ -106,4 +123,11 @@
     }
 
 
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: black;
+    }
+    
 }
