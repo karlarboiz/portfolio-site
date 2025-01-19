@@ -5,6 +5,7 @@
     padding: $btn-padding;
     border-radius: $btn-radius;
     font-weight: 600;
+    font-size: $common-button--font-size;
     position: relative;
 
 }
@@ -23,8 +24,7 @@
     z-index: -1;
     @include backgroundMixin;
     transform-origin: left;
-
-    transition: transform 200ms ease-in;
+    transition: transform 1.5s ease-in;
 }
 
 .btn:hover::before,
