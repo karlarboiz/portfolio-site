@@ -11879,6 +11879,7 @@ body {
 }
 
 .section--1 {
+  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -11940,7 +11941,7 @@ body {
 }
 .section--1__col--item-1::after {
   bottom: 0;
-  transform: translate(12.5rem, 0rem) rotate(220deg);
+  transform: translate(15rem, -0.75rem) rotate(220deg);
 }
 @keyframes moveAndTransformForBefore {
   0% {

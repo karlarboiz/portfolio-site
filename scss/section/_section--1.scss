@@ -5,7 +5,7 @@
 
 }
 .section--1 {
-   
+   background-color: black;
     height: max-content;
     min-height: max-content;
     position: relative;
@@ -83,7 +83,7 @@
 
         &--item-1::after {
             bottom: 0;
-            transform: translate(12.5rem,0rem) rotate(220deg);
+            transform: translate(15rem,-.75rem) rotate(220deg);
             // animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
         }
 
