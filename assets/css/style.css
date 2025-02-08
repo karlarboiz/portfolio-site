@@ -11913,7 +11913,7 @@ body {
     width: 25rem;
   }
   .section--1 .main--header {
-    font-size: 3.75rem;
+    font-size: 3.25rem;
   }
 }
 .section--1__col {
@@ -12216,14 +12216,15 @@ nav::after {
 .contact-item i {
   font-size: 2.5rem;
 }
-
 .contact-item a {
   text-decoration: none;
   color: inherit;
 }
-
 .contact-item a:hover {
   color: #0077b5; /* LinkedIn blue */
+}
+.contact-item--svg svg {
+  height: 2.75rem;
 }
 
 .common-highlight {
