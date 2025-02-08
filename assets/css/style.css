@@ -12181,12 +12181,28 @@ body {
 @media screen and (max-width: 770px) {
   .section--5__second--container {
     width: 100%;
-    top: -10rem;
+    top: 0;
     text-align: center;
     color: #EADFB4;
   }
   .section--5 .main--header {
     font-size: 3.25rem;
+    line-height: 2.5rem;
+  }
+  .section--5 .common-text {
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section--5__second--container {
+    width: 100%;
+    top: -17.5;
+    text-align: center;
+    color: #EADFB4;
+  }
+  .section--5 .main--header {
+    font-size: 3.25rem;
+    line-height: 2.5rem;
   }
   .section--5 .common-text {
     font-weight: bolder;

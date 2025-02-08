@@ -56,7 +56,7 @@
 
         &__second--container {
             width: 100%;
-            top: -10rem;
+            top: 0;
             text-align: center;
             color: $color-primary
 
@@ -64,6 +64,7 @@
 
         .main--header {
             font-size: $font-size--main-reduced;
+            line-height: 2.5rem;
         }
 
         .common-text {
@@ -71,6 +72,27 @@
         }
 
 
+    }
+
+    @media screen and (max-width: 500px) {
+
+
+        &__second--container {
+            width: 100%;
+            top: -17.5;
+            text-align: center;
+            color: $color-primary
+
+        }
+
+        .main--header {
+            font-size: $font-size--main-reduced;
+            line-height: 2.5rem;
+        }
+
+        .common-text {
+            font-weight: bolder;
+        }
     }
 
 
