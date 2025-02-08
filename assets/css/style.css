@@ -11898,6 +11898,7 @@ body {
   padding: 0.5rem 0.85rem;
   border: 0.25rem dashed #9BB0C1;
   border-radius: 1.5rem;
+  color: #F6995C;
 }
 .section--1 .indicator svg {
   fill: 0.25rem;
@@ -11994,6 +11995,9 @@ body {
   .section--1__col--item-1::after {
     transform: translate(8.5rem, 2.5rem) rotate(220deg);
   }
+}
+.section--1__col--item-2 .common-text {
+  color: #F6995C;
 }
 
 .section--2 {

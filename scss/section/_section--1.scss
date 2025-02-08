@@ -11,7 +11,7 @@
     position: relative;
 
 
-    
+
     
     &__main {
         height: 100%;
@@ -24,6 +24,7 @@
         padding: .5rem .85rem;
         border: .25rem dashed $color-secondary;
         border-radius: 1.5rem;
+        color: $color-other;
         svg {
             fill: .25rem;
         }
@@ -142,9 +143,12 @@
                 transform: translate(8.5rem,2.5rem) rotate(220deg);
                 // animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
             }
+        }
 
-
-          
+        &--item-2 {
+            .common-text {
+                color: $color-other
+            }
         }
     }
 
