@@ -2,6 +2,11 @@
 @use "../components/mixin" as *;
 
 
+.navbar {
+  background:linear-gradient(to right, $color-secondary,$color-calltoaction);
+}
+
+
 nav::after {
     content: "";
     display: block;
@@ -29,6 +34,7 @@ nav::after {
     height: 1.5rem * 2;
     animation: bell-swing 2.5s ease-in-out infinite;
     transform-origin: top center; 
+    fill: $color-primary;
 }
 
 .navbar-brand svg:hover {
@@ -59,7 +65,9 @@ nav::after {
 
 .nav-item a {
     font-weight: 700;
-    font-size: $font-size--sub-header;
+    font-size: $font-size--nav-item;
+    color: white;
+
 }
 
 .nav-link__item {
@@ -68,7 +76,7 @@ nav::after {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    color: black; /* Default color */
+  
     transition: transform 0.2s ease-out, color 0.3s ease-out; /* Smooth scaling and color transitions */
     background: linear-gradient(to right, #fc5c7d, #6a82fb);
     background-size: 200%; /* Larger background for animation */
@@ -85,7 +93,7 @@ nav::after {
   }
 
   .nav-link__item:not(:hover) {
-    -webkit-text-fill-color: black; /* Revert to black */
+    -webkit-text-fill-color: $color-primary; /* Revert to black */
     background-position: right center; /* Gradient moves right to left */
     transition: background-position 0.3s ease-in-out, transform 0.2s ease-in;
   }
