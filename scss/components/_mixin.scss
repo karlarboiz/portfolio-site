@@ -5,11 +5,11 @@
 }
 
 @mixin shapesMixin {
-    background-image: linear-gradient(to right, $secondary--color, $calltoaction);;
+    background-image: linear-gradient(to right, $color-secondary, $color-calltoaction);;
 }
 
 @mixin mainSectionMixin{
-    background: radial-gradient($secondary--color, hsl(240, 20%, 97%));
+    background: radial-gradient($color-secondary, hsl(240, 20%, 97%));
 }
 
 @mixin fillSVGColor {

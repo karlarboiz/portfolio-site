@@ -16,7 +16,7 @@ body {
 }
 
 .common-text {
-    font-size: $common-font--size;
+    font-size: $font-size--common-text;
     padding: 0;
     margin: 0;
 }
@@ -26,6 +26,6 @@ body {
 }
 
 .common-highlight {
-    font-size: $common-font--size;
+    font-size: $font-size--common-text;
     font-weight: 500;
 }

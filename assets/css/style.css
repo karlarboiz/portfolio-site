@@ -11891,13 +11891,12 @@ body {
   font-weight: 600;
 }
 .section--1 .main--header {
-  color: #FFDB58;
+  color: #EADFB4;
   font-size: 5rem;
   font-weight: 800;
   margin: 0;
   padding: 0;
   line-height: 4.25rem;
-  color: #FFDB58;
   font-family: "Share Tech Mono", serif;
 }
 .section--1 .profile--pic {
@@ -12057,10 +12056,11 @@ body {
 
 .btn {
   padding: 0.75rem 1.05rem;
-  border-radius: 1.75rem;
   font-weight: 600;
   font-size: 1.35rem;
   position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid black;
 }
 
 .btn::before {
@@ -12069,11 +12069,11 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  border-radius: 1.75rem;
   height: 100%;
   width: 100%;
   transform: scaleX(0);
   z-index: -1;
+  border-radius: 0.5rem;
   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
   transform-origin: left;
   transition: transform 0.45s ease-in;

@@ -21,13 +21,12 @@
     }
 
     .main--header {
-        color: $common--text-color;
-        font-size: $main-font--size;
+        color: $color-primary;
+        font-size: $font-size--main;
         font-weight: $main-header--font-weight;
         margin: 0;
         padding: 0;
         line-height: 4.25rem;
-        color: $common--text-color;
         font-family: $special-font--style;
     }
  
@@ -50,7 +49,7 @@
         }
 
         .main--header {
-            font-size: $main-font--size-reduced;
+            font-size: $font-size--main-reduced;
         }
     }
 

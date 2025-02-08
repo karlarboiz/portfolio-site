@@ -9,7 +9,7 @@ export function typingAnimation(element, speed = 100) {
     if (isTyping) return; // Prevent starting the animation again if it's already in progress
 
     isTyping = true;
-    element.innerHTML = ""; // Clear the content before starting
+    element.innerHTML = ""; 
 
     function type() {
         if (i < titleText.length) {

@@ -3,11 +3,11 @@
 
 .btn {
     padding: $btn-padding;
-    border-radius: $btn-radius;
     font-weight: 600;
-    font-size: $common-button--font-size;
+    font-size: $font-size--common-button;
     position: relative;
-
+    border-radius: .5rem;
+    border: 1px solid black;
 }
 
 
@@ -17,11 +17,11 @@
     top: 0;
     left: 0;
     bottom: 0;
-    border-radius: $btn-radius;
     height: 100%;
     width: 100%;
     transform: scaleX(0);
     z-index: -1;
+    border-radius: .5rem;
     @include backgroundMixin;
     transform-origin: left;
     transition: transform .45s ease-in;
