@@ -25,6 +25,12 @@ body {
     font-weight: $main-header--font-weight;
 }
 
+.section-header  {
+    font-size: $font-size--sub-header;
+    font-family: $special-font--style;
+    font-weight: $main-header--font-weight;
+}
+
 .common-highlight {
     font-size: $font-size--common-text;
     font-weight: 500;

@@ -11866,7 +11866,13 @@ body {
 }
 
 .common-header {
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.section-header {
+  font-size: 1.85rem;
+  font-family: "Share Tech Mono", serif;
+  font-weight: 700;
 }
 
 .common-highlight {
@@ -11886,14 +11892,23 @@ body {
 .section--1__main {
   height: 100%;
 }
+.section--1 .indicator {
+  width: fit-content;
+  padding: 0.5rem 0.85rem;
+  border: 0.25rem dashed black;
+  border-radius: 1.5rem;
+}
+.section--1 .indicator svg {
+  fill: 0.25rem;
+}
 .section--1 .indicator-text {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 600;
 }
 .section--1 .main--header {
   color: #EADFB4;
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   line-height: 4.25rem;
@@ -11935,10 +11950,12 @@ body {
 .section--1__col--item-1::before {
   top: 0;
   transform: translate(-15rem, 1.5rem) rotate(45deg);
+  animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
 }
 .section--1__col--item-1::after {
   bottom: 0;
   transform: translate(15rem, -0.75rem) rotate(220deg);
+  animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
 }
 @keyframes moveAndTransformForBefore {
   0% {
@@ -11981,11 +11998,6 @@ body {
 .section--2 {
   min-height: max-content;
 }
-.section--2-header {
-  font-size: 1.85rem;
-  font-family: "Share Tech Mono", serif;
-  font-weight: 800;
-}
 .section--2 .feature {
   border-radius: 0.45rem;
   position: relative;
@@ -11993,6 +12005,7 @@ body {
 }
 .section--2 .feature .common-header {
   position: relative;
+  font-size: 1.5rem;
 }
 .section--2 .feature .common-header::before {
   content: "";
@@ -12052,6 +12065,106 @@ body {
   height: 80%;
   border-radius: 0.45rem;
   object-fit: cover;
+}
+
+.section--3 {
+  height: max-content;
+  min-height: max-content;
+}
+.section--3 .accordion-body {
+  height: max-content;
+  min-height: max-content;
+}
+.section--3 .project-image {
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact-item {
+  border-bottom: 0.25rem black solid;
+}
+.contact-item i {
+  font-size: 2.5rem;
+}
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-item a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+.contact-item--svg {
+  padding: 1.75rem 0;
+  border-radius: 0.25rem;
+  border-top: 0.75rem black solid;
+}
+.contact-item--svg-1 {
+  fill: red;
+}
+.contact-item--svg-2 {
+  fill: blue;
+}
+.contact-item--svg-3 {
+  fill: green;
+}
+.contact-item--svg-4 {
+  fill: #0077B5;
+}
+.contact-item--svg svg {
+  height: 3.75rem;
+}
+
+.common-highlight {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.section--5 {
+  height: 35rem;
+  position: relative;
+}
+.section--5__col--main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 100%;
+}
+.section--5 h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.section--5__second--container {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: 45%;
+  transform: translate(-50%, 50%);
+}
+@media screen and (max-width: 770px) {
+  .section--5__second--container {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    text-align: center;
+    color: #EADFB4;
+  }
+  .section--5 .common-text {
+    font-weight: bolder;
+  }
+  .section--5 .btn {
+    background-color: aliceblue;
+  }
+}
+
+.section--6 {
+  min-height: calc(35rem - 50%);
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  position: relative;
+}
+.section--6 span {
+  padding: 0.25rem 0.75rem;
+  border: 0.05rem solid black;
+  position: absolute;
 }
 
 .btn {
@@ -12184,120 +12297,6 @@ nav::after {
   -webkit-text-fill-color: #EADFB4; /* Revert to black */
   background-position: right center; /* Gradient moves right to left */
   transition: background-position 0.3s ease-in-out, transform 0.2s ease-in;
-}
-
-.indicator {
-  width: fit-content;
-  padding: 0.5rem 0.85rem;
-  border: 0.25rem dashed black;
-  border-radius: 1.5rem;
-}
-.indicator svg {
-  fill: 0.25rem;
-}
-.indicator-text {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.section--3 {
-  height: max-content;
-  min-height: max-content;
-}
-.section--3 .accordion-body {
-  height: max-content;
-  min-height: max-content;
-}
-.section--3 .project-image {
-  height: 100%;
-  object-fit: contain;
-}
-
-.contact-item {
-  border-bottom: 0.25rem black solid;
-}
-.contact-item i {
-  font-size: 2.5rem;
-}
-.contact-item a {
-  text-decoration: none;
-  color: inherit;
-}
-.contact-item a:hover {
-  color: #0077b5; /* LinkedIn blue */
-}
-.contact-item--svg {
-  padding: 1.75rem 0;
-  border-radius: 0.25rem;
-  border-top: 0.75rem black solid;
-}
-.contact-item--svg-1 {
-  fill: red;
-}
-.contact-item--svg-2 {
-  fill: blue;
-}
-.contact-item--svg-3 {
-  fill: green;
-}
-.contact-item--svg-4 {
-  fill: #0077B5;
-}
-.contact-item--svg svg {
-  height: 3.75rem;
-}
-
-.common-highlight {
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.section--5 {
-  height: 35rem;
-  position: relative;
-}
-.section--5__col--main-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 100%;
-}
-.section--5 h1 {
-  font-size: 5rem;
-  font-weight: 800;
-}
-.section--5__second--container {
-  position: absolute;
-  top: 0;
-  left: 75%;
-  width: 45%;
-  transform: translate(-50%, 50%);
-}
-@media screen and (max-width: 770px) {
-  .section--5__second--container {
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 25%);
-    text-align: center;
-    color: #EADFB4;
-  }
-  .section--5 .common-text {
-    font-weight: bolder;
-  }
-  .section--5 .btn {
-    background-color: aliceblue;
-  }
-}
-
-.section--6 {
-  min-height: calc(35rem - 50%);
-  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
-  position: relative;
-}
-.section--6 span {
-  padding: 0.25rem 0.75rem;
-  border: 0.05rem solid black;
-  position: absolute;
 }
 
 .notification {

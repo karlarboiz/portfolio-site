@@ -3,12 +3,11 @@
 
 @use "./section/section--1";
 @use "./section/section--2";
-@use "./components/buttons";
-@use "./components/navbar";
-@use "./components/indicator";
 @use "./section/section--3";
 @use "./section/section--4";
 @use "./section/section--5";
 @use "./section/section--6";
 
+@use "./components/buttons";
+@use "./components/navbar";
 @use "./components/notifcation";

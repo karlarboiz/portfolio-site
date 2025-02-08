@@ -15,9 +15,22 @@
         height: 100%;
     }
 
-    .indicator-text {
-        font-size: 1.25rem;
-        font-weight: 600;
+    .indicator {
+        // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        
+        width: fit-content;
+        padding: .5rem .85rem;
+        border: .25rem dashed black;
+        border-radius: 1.5rem;
+    
+        svg {
+            fill: .25rem;
+        }
+    
+        &-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
     }
 
     .main--header {
@@ -74,13 +87,13 @@
         &--item-1::before {
             top: 0; 
             transform: translate(-15rem,1.5rem) rotate(45deg);
-            // animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
+            animation: moveAndTransformForBefore 2.5s ease-in-out forwards;
         }
 
         &--item-1::after {
             bottom: 0;
             transform: translate(15rem,-.75rem) rotate(220deg);
-            // animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
+            animation: moveAndTransformForAfter 2.5s ease-in-out forwards;
         }
 
         /* Keyframes for animation */
@@ -101,19 +114,20 @@
         @keyframes moveAndTransformForAfter {
             0% {
                 transform: translate(10rem,10rem) rotate(220deg);
-              }
-              50% {
-                top: 100%; /* Move up halfway */
-                left: var(--from-to--shape-origin) / 2;
-                transform: scale(1); /* Full size */
-                clip-path: circle(50%); /* Still a circle */
-              }
-              100% {
-                left: var(--from-to--shape-origin);
-                bottom: 0;
-                transform: rotate(225deg);
-                clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
-              }
+            }
+            
+            50% {
+            top: 100%; /* Move up halfway */
+            left: var(--from-to--shape-origin) / 2;
+            transform: scale(1); /* Full size */
+            clip-path: circle(50%); /* Still a circle */
+            }
+            100% {
+            left: var(--from-to--shape-origin);
+            bottom: 0;
+            transform: rotate(225deg);
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); /* Transformed shape */
+            }
         }
 
         @media only screen and (max-width: 800px) {
