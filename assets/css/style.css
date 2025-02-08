@@ -12181,8 +12181,7 @@ body {
 @media screen and (max-width: 770px) {
   .section--5__second--container {
     width: 100%;
-    left: 50%;
-    transform: translate(-50%, 25%);
+    top: -10rem;
     text-align: center;
     color: #EADFB4;
   }

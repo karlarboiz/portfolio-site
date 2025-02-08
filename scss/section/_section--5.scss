@@ -3,6 +3,7 @@
 
 .section--5 {
     height: $section-height;
+ 
     position: relative;
 
 
@@ -55,8 +56,7 @@
 
         &__second--container {
             width: 100%;
-            left: 50%;
-            transform: translate(-50%, 25%);
+            top: -10rem;
             text-align: center;
             color: $color-primary
 
