@@ -11860,7 +11860,7 @@ body {
 }
 
 .common-text {
-  font-size: 1.075rem;
+  font-size: 0.975rem;
   padding: 0;
   margin: 0;
 }
@@ -11876,7 +11876,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 1.075rem;
+  font-size: 0.975rem;
   font-weight: 500;
 }
 
@@ -12087,6 +12087,7 @@ body {
 
 .contact-item {
   border-bottom: 0.25rem black solid;
+  text-decoration: none;
 }
 .contact-item i {
   font-size: 2.5rem;
@@ -12131,7 +12132,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 1.075rem;
+  font-size: 0.975rem;
   font-weight: 700;
 }
 
