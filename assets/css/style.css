@@ -12088,6 +12088,7 @@ body {
 .contact-item {
   border-bottom: 0.25rem black solid;
   text-decoration: none;
+  color: unset;
 }
 .contact-item i {
   font-size: 2.5rem;
