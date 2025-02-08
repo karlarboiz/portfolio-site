@@ -12223,8 +12223,23 @@ nav::after {
 .contact-item a:hover {
   color: #0077b5; /* LinkedIn blue */
 }
+.contact-item--svg {
+  padding: 1.75rem 0;
+}
+.contact-item--svg-1 {
+  fill: red;
+}
+.contact-item--svg-2 {
+  fill: blue;
+}
+.contact-item--svg-3 {
+  fill: green;
+}
+.contact-item--svg-4 {
+  fill: blue;
+}
 .contact-item--svg svg {
-  height: 2.75rem;
+  height: 3.75rem;
 }
 
 .common-highlight {

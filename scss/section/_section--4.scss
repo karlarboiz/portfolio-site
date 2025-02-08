@@ -14,8 +14,25 @@
       color: #0077b5; /* LinkedIn blue */
     }
 
-    &--svg svg{
-      height: 2.75rem;
+    &--svg {
+      padding: 1.75rem 0;
+      &-1 {
+        fill: red;
+      }
+
+      &-2 {
+        fill: blue;
+      }
+
+      &-3 {
+        fill: green;
+      }
+      &-4 {
+        fill: blue;
+      }
+      svg{
+        height: 3.75rem;
+      }
     }
   }
   
