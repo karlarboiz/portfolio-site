@@ -33,7 +33,7 @@
 
     &__second--container {
         position: absolute;
-        top: 0;
+        top: -7.75rem;
         left: 50%;
         width: 50rem;
         transform: translate(-50%, 50%);
@@ -73,12 +73,12 @@
 
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 480px) {
 
 
         &__second--container {
             width: 100%;
-            top: -11.5rem;
+            top: -7.5rem;
         
         }
 
