@@ -12174,6 +12174,7 @@ body {
   color: #EADFB4;
   font-family: "Share Tech Mono", serif;
   line-height: 3.75rem;
+  font-weight: 700;
 }
 .section--5__second--container .common-text {
   color: #F6995C;
@@ -12182,8 +12183,6 @@ body {
   .section--5__second--container {
     width: 100%;
     top: 0;
-    text-align: center;
-    color: #EADFB4;
   }
   .section--5 .main--header {
     font-size: 3.25rem;
@@ -12196,16 +12195,8 @@ body {
 @media screen and (max-width: 500px) {
   .section--5__second--container {
     width: 100%;
-    top: -17.5;
-    text-align: center;
-    color: #EADFB4;
-  }
-  .section--5 .main--header {
-    font-size: 3.25rem;
-    line-height: 2.5rem;
-  }
-  .section--5 .common-text {
-    font-weight: bolder;
+    top: -11.5rem;
+    background-color: red;
   }
 }
 

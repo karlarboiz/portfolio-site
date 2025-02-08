@@ -44,6 +44,7 @@
             color: $color-primary;
             font-family: $special-font--style;
             line-height: 3.75rem;
+            font-weight: $main-header--font-weight;
         }
 
         .common-text {
@@ -57,9 +58,7 @@
         &__second--container {
             width: 100%;
             top: 0;
-            text-align: center;
-            color: $color-primary
-
+           
         }
 
         .main--header {
@@ -79,20 +78,11 @@
 
         &__second--container {
             width: 100%;
-            top: -17.5;
-            text-align: center;
-            color: $color-primary
+            top: -11.5rem;
+            background-color: red;
 
         }
 
-        .main--header {
-            font-size: $font-size--main-reduced;
-            line-height: 2.5rem;
-        }
-
-        .common-text {
-            font-weight: bolder;
-        }
     }
 
 
