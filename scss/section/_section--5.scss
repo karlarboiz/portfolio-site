@@ -5,6 +5,18 @@
     height: $section-height;
     position: relative;
 
+
+    .row::before {
+        content: "karl";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .75  ) ;
+    }
+
     &__col--main-img {
         width: 100%;
         height: 100%;
@@ -21,16 +33,28 @@
     &__second--container {
         position: absolute;
         top: 0;
-        left: 75%;
-        width: 45%;
+        left: 50%;
+        width: 50rem;
         transform: translate(-50%, 50%);
+        text-align: center;
+
+        .main--header {
+            font-size: $font-size--main;
+            color: $color-primary;
+            font-family: $special-font--style;
+            line-height: 3.75rem;
+        }
+
+        .common-text {
+            color: $color-other;
+        }
     }
 
     @media screen and (max-width: 770px) {
 
 
         &__second--container {
-            width: 90%;
+            width: 100%;
             left: 50%;
             transform: translate(-50%, 25%);
             text-align: center;
@@ -38,13 +62,15 @@
 
         }
 
+        .main--header {
+            font-size: $font-size--main-reduced;
+        }
+
         .common-text {
             font-weight: bolder;
         }
 
-        .btn {
-            background-color: aliceblue;
-        }
+
     }
 
 

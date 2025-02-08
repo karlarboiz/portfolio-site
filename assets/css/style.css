@@ -12141,6 +12141,16 @@ body {
   height: 35rem;
   position: relative;
 }
+.section--5 .row::before {
+  content: "karl";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
 .section--5__col--main-img {
   width: 100%;
   height: 100%;
@@ -12154,23 +12164,33 @@ body {
 .section--5__second--container {
   position: absolute;
   top: 0;
-  left: 75%;
-  width: 45%;
+  left: 50%;
+  width: 50rem;
   transform: translate(-50%, 50%);
+  text-align: center;
+}
+.section--5__second--container .main--header {
+  font-size: 5rem;
+  color: #EADFB4;
+  font-family: "Share Tech Mono", serif;
+  line-height: 3.75rem;
+}
+.section--5__second--container .common-text {
+  color: #F6995C;
 }
 @media screen and (max-width: 770px) {
   .section--5__second--container {
-    width: 90%;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, 25%);
     text-align: center;
     color: #EADFB4;
   }
+  .section--5 .main--header {
+    font-size: 3.25rem;
+  }
   .section--5 .common-text {
     font-weight: bolder;
-  }
-  .section--5 .btn {
-    background-color: aliceblue;
   }
 }
 
