@@ -12101,7 +12101,18 @@ body {
 .contact-item--svg {
   padding: 1.75rem 0;
   border-radius: 0.25rem;
-  border-top: 0.75rem black solid;
+}
+.contact-item--svg-container--1 {
+  border-top: 0.75rem red solid;
+}
+.contact-item--svg-container--2 {
+  border-top: 0.75rem blue solid;
+}
+.contact-item--svg-container--3 {
+  border-top: 0.75rem green solid;
+}
+.contact-item--svg-container--4 {
+  border-top: 0.75rem #0077B5 solid;
 }
 .contact-item--svg-1 {
   fill: red;
