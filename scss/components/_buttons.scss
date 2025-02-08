@@ -3,7 +3,7 @@
 
 .btn {
     padding: $btn-padding;
-    font-weight: 600;
+    font-weight: $btn-font--weight;
     font-size: $font-size--common-button;
     position: relative;
     border-radius: .5rem;

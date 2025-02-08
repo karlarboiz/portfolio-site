@@ -4,6 +4,12 @@
 .section--2 {
     min-height: max-content;
 
+    &-header {
+        font-size: $font-size--sub-header;
+        font-family: $special-font--style;
+        font-weight: $main-header--font-weight;
+    }
+
     .feature {
         border-radius: $card-radius;
 
@@ -97,10 +103,5 @@
             object-fit: cover;
         }
     }
-
-    .section-header {
-        font-size: $font-size--sub-header;
-        font-style: $special-font--style;
-        font-weight: $main-header--font-weight;
-    }
 }
+

@@ -3,7 +3,7 @@
 
 
 .navbar {
-  background:linear-gradient(to right, $color-secondary,$color-calltoaction);
+  @include shapesMixin;
 }
 
 

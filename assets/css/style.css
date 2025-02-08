@@ -11981,6 +11981,11 @@ body {
 .section--2 {
   min-height: max-content;
 }
+.section--2-header {
+  font-size: 1.85rem;
+  font-family: "Share Tech Mono", serif;
+  font-weight: 800;
+}
 .section--2 .feature {
   border-radius: 0.45rem;
   position: relative;
@@ -12048,16 +12053,11 @@ body {
   border-radius: 0.45rem;
   object-fit: cover;
 }
-.section--2 .section-header {
-  font-size: 1.75rem;
-  font-style: "Share Tech Mono", serif;
-  font-weight: 800;
-}
 
 .btn {
-  padding: 0.75rem 1.05rem;
-  font-weight: 600;
-  font-size: 1.35rem;
+  padding: 0.725rem 1.05rem;
+  font-weight: 700;
+  font-size: 1.05rem;
   position: relative;
   border-radius: 0.5rem;
   border: 1px solid black;
@@ -12101,7 +12101,7 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(to right, #9BB0C1, #51829B);
+  background-image: linear-gradient(to right, #9BB0C1, #51829B);
 }
 
 nav::after {
