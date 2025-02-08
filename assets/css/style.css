@@ -11860,7 +11860,7 @@ body {
 }
 
 .common-text {
-  font-size: 0.9rem;
+  font-size: 1.075rem;
   padding: 0;
   margin: 0;
 }
@@ -11876,7 +11876,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 0.9rem;
+  font-size: 1.075rem;
   font-weight: 500;
 }
 
@@ -11885,6 +11885,7 @@ body {
 }
 
 .section--1 {
+  background-color: black;
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -11895,7 +11896,7 @@ body {
 .section--1 .indicator {
   width: fit-content;
   padding: 0.5rem 0.85rem;
-  border: 0.25rem dashed black;
+  border: 0.25rem dashed #9BB0C1;
   border-radius: 1.5rem;
 }
 .section--1 .indicator svg {
@@ -12115,7 +12116,7 @@ body {
 }
 
 .common-highlight {
-  font-size: 0.9rem;
+  font-size: 1.075rem;
   font-weight: 700;
 }
 
@@ -12173,7 +12174,8 @@ body {
   font-size: 1.05rem;
   position: relative;
   border-radius: 0.5rem;
-  border: 1px solid black;
+  background-color: #9BB0C1;
+  color: aliceblue;
 }
 
 .btn::before {

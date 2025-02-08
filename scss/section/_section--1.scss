@@ -5,11 +5,13 @@
 
 }
 .section--1 {
-  
+    background-color: black;
     height: max-content;
     min-height: max-content;
     position: relative;
 
+
+    
     
     &__main {
         height: 100%;
@@ -20,9 +22,8 @@
         
         width: fit-content;
         padding: .5rem .85rem;
-        border: .25rem dashed black;
+        border: .25rem dashed $color-secondary;
         border-radius: 1.5rem;
-    
         svg {
             fill: .25rem;
         }
@@ -115,7 +116,7 @@
             0% {
                 transform: translate(10rem,10rem) rotate(220deg);
             }
-            
+
             50% {
             top: 100%; /* Move up halfway */
             left: var(--from-to--shape-origin) / 2;
