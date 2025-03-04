@@ -11885,7 +11885,7 @@ body {
 }
 
 .section--1 {
-  background-color: black;
+  background-image: linear-gradient(to bottom right, rgb(10, 4, 4), rgb(13, 9, 68));
   height: max-content;
   min-height: max-content;
   position: relative;
@@ -12052,7 +12052,6 @@ body {
   transition: background-color 0.25s ease-in, scale 0.25s ease-in, z-index 0.25s ease-out, box-shadow 0.25s ease-out, backdrop-filter 0.25s ease-out, border 0.25s ease-out;
 }
 .section--2 .feature:not(.feature:hover) {
-  background-color: white;
   scale: 1;
   z-index: 0;
   box-shadow: none;
@@ -12142,7 +12141,7 @@ body {
   position: relative;
 }
 .section--5 .row::before {
-  content: "karl";
+  content: "";
   display: block;
   position: absolute;
   top: 0;
